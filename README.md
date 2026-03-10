@@ -2,8 +2,11 @@
 
 Projeto simples em Python que gera frases motivacionais aleatórias.
 
+
 ## Objetivo
-Praticar o Git, GitHub e conceitos de controle de versão.
+Este projeto foi desenvolvido para praticar Git, controle de versões
+e conceitos utilizados em pipelines de CI/CD.
+
 
 ## Como executar
 
