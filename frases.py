@@ -1,6 +1,7 @@
 import random
 
-frases = [
+def mostrar_frase():
+    frases = [
     "Pequenos progressos constantes levam a grandes resultados.",
     "Nunca desista dos seus sonhos.",
     "A disciplina supera a motivação.",
@@ -19,6 +20,4 @@ frases = [
     "Hoje é um ótimo dia para dar o primeiro passo.",
     "Hoje é um ótimo dia para começar algo novo."
 ]
-
-def mostrar_frase():
     return random.choice(frases)
