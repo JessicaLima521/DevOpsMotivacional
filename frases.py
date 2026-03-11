@@ -1,6 +1,6 @@
 import random
 
-def gerar_frase():
+def mostrar_frase():
     frases = [
     "Pequenos progressos constantes levam a grandes resultados.",
     "Nunca desista dos seus sonhos.",
