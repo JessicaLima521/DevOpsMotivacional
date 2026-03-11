@@ -1,0 +1,24 @@
+
+name: CI Python
+
+on:
+  push:
+    branches: [ main, nova-funcionalidade ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Executar aplicação
+        run: python app.py
