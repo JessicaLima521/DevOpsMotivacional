@@ -1,4 +1,4 @@
-name: CD - Deploy Simples
+name: CD - Deploy
 
 on:
   push:
@@ -7,13 +7,12 @@ on:
 
 jobs:
   deploy:
-
+  
     runs-on: ubuntu-latest
 
     steps:
-    - name: Baixar código
-      uses: actions/checkout@v3
+      - name: Baixar código
+        uses: actions/checkout@v3
 
-    - name: Simular deploy
-      run: |
-        echo "Deploy realizado com sucesso!"
+      - name: Simular deploy
+        run: echo "Deploy realizado com sucesso!"
