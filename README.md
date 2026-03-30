@@ -14,3 +14,7 @@ e conceitos utilizados em pipelines de CI/CD.
 
 
 python app.py
+##
+
+docker build -t devops-motivacional .
+docker run -p 3000:3000 devops-motivacional
