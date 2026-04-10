@@ -33,7 +33,7 @@ jobs:
       run: |
         pytest
 
-    - name: Enviar alerta Discord
+    - name: Enviar alerta Discord  #O alerta será enviado mesmo se der erro nos testes
     
       if: always()
       
