@@ -32,3 +32,12 @@ jobs:
     - name: Rodar testes
       run: |
         pytest
+
+    - name: Enviar alerta Discord
+    
+      if: always()
+      
+      run: |
+        curl -H "Content-Type: application/json" \
+        -d "{\"content\": \"CI finalizado com status: ${{ job.status }}\"}" \
+        ${{ secrets.DISCORD_WEBHOOK }}
