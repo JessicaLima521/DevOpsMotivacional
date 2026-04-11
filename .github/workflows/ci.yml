@@ -2,7 +2,7 @@ name: CI - Testar aplicação
 
 on:
   push:
-    branches: [ main, feature-testes ]
+    branches: [ main, feature-testes, testes-final ]
   pull_request:
     branches: [ main ]
     
