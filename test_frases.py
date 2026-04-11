@@ -19,5 +19,4 @@ def test_tamanho():
     assert len(mostrar_frase()) > 3
 
 def test_nao_none():
-    
     assert mostrar_frase() is not None
